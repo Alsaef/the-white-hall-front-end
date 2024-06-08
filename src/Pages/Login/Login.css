@@ -1,0 +1,26 @@
+.login-btn {
+  width: 100%;
+  background: #e6e6e6;
+  border: none;
+  color: #212529;
+  font-weight: 700;
+  box-shadow: 1px 3px 3px #919090;
+  transition: 0.3s linear;
+}
+
+.login-btn:hover {
+  background: #212529;
+  color: #fff;
+}
+.error {
+  color: red;
+}
+
+.route-btn {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: sans-serif;
+}

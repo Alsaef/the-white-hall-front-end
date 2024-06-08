@@ -1,0 +1,20 @@
+.place-order {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 30%;
+  }
+  
+  .place-order input {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    margin: 20px auto;
+    border: none;
+  }
