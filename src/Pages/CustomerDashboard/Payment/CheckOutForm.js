@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "axios";
 import useAuth from "../../../hooks/useAuth";
-
+import Button from 'react-bootstrap/Button';
 const CheckOutForm = ({ sum }) => {
   const stripe = useStripe();
   const elements = useElements();
@@ -112,9 +112,9 @@ const CheckOutForm = ({ sum }) => {
             },
           }}
         />
-        <button type="submit" disabled={!stripe}>
+        <Button className="mt-2" variant="primary" type="submit" disabled={!stripe}>
           Pay {sum}
-        </button>
+        </Button>
         {error && <p style={{ color: "red" }}>{error}</p>}
         {success && <p style={{ color: "green" }}>{success}</p>}
       </form>

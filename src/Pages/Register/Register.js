@@ -30,7 +30,11 @@ const Register = () => {
 
                registerUser(loginData.email, loginData.password, loginData.name, navigate)
                e.preventDefault();
+
+               navigate('/')
           }
+
+
 
      return (
           <div className="container mb-5">

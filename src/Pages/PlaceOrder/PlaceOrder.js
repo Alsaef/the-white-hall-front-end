@@ -47,7 +47,7 @@ const PlaceOrder = () => {
   };
 
   return (
-    <div className="container custom-body mt-5">
+    <div className="container custom-body mt-5" style={{margin:'10px 0'}}>
       <div className="row  align-items-center">
         <div className=" col-md-6">
           <div className="card custom-cart mb-3">

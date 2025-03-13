@@ -41,8 +41,8 @@ const Header = () => {
 
                 <Nav.Link as={NavLink} to="/bookCenter">BOOK CENTER</Nav.Link>
                 <Nav.Link as={NavLink} to="/contact">CONTACT</Nav.Link>
-                <Nav.Link as={NavLink} to="/customerDashboard">DASHBOARD</Nav.Link>
-                <Nav.Link as={NavLink} to="/admin">ADMIN DASHBOARD</Nav.Link>
+                {displayName&&<Nav.Link as={NavLink} to="/customerDashboard">DASHBOARD</Nav.Link>}
+                {isAdmin&&<Nav.Link as={NavLink} to="/admin">ADMIN DASHBOARD</Nav.Link>}
 
 
 
@@ -62,11 +62,7 @@ const Header = () => {
 
                     <Nav.Link as={NavLink} to="/login">LOGIN</Nav.Link></>) : (
                     <>
-                        {isAdmin ?
-                            <Nav.Link className='text-danger' ><h4>{displayName} <i className="fas fa-users-cog"></i></h4></Nav.Link>
-                            :
-                            <Nav.Link className='text-danger' ><h4>{displayName}</h4></Nav.Link>
-                        }
+                    
 
 
                         <button className='btn-danger p-2 text-light   rounded-pill btn-block' onClick={logOut}> LOGOUT</button></>
